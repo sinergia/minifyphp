@@ -1,0 +1,23 @@
+{
+    "name": "sinergia/minifyphp",
+    "description": "Remove spaces and comments from PHP code",
+    "license": "MIT",
+    "version": "0.1.0-alpha",
+    "keywords": ["php", "minify", "compress", "token", "tokenizer"],
+    "homepage": "https://github.com/sinergia/minifyphp",
+    "authors": [
+        {
+            "name": "Marcos Neves",
+            "email": "marcos.neves@gmail.com",
+            "homepage": "http://www.sinergia.mobi/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Sinergia\\MinifyPHP\\": ""
+        }
+    },
+    "require": {
+        "php": ">=5.3.7"
+    }
+}
