@@ -18,13 +18,13 @@ namespace Foo\Bar;
 
 include'dummy.php';
 require'dummy.php';
-include_once 'dummy.php';
+include_once'dummy.php';
 require_once 'dummy.php';
 
 trait MyTrait  { function foo(){} }
 trait YourTrait { function foo(){} }
 goto label;
-label:˜
+//label:˜
 abstract class ClasseAbstrata extends \stdClass {
     const c = 0;
     use MyTrait, YourTrait {
@@ -81,6 +81,10 @@ for(;false;): eval(""); endfor;
 do { continue; } while (0 >= 1);
 while (1 <= 0): exit(); die(); endwhile;
 
+$j = <<<Heredoc
+teste";
+Heredoc;
+
 $s = <<<Heredoc
 text";
 Heredoc;
@@ -108,8 +112,9 @@ switch ($v):
     default:
         break;
 endswitch;
+function(){};
 
 unset($v);
 (unset)$s;
-declare(ticks=1): enddeclare;
-__halt_compiler();
+//declare(ticks=1): enddeclare;
+//__halt_compiler();
