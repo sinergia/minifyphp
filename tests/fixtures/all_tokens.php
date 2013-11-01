@@ -119,4 +119,4 @@ function(){};
 unset($v);
 (unset) $s;
 //declare(ticks=1): enddeclare;
-//__halt_compiler();
+__halt_compiler();
