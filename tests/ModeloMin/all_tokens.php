@@ -9,4 +9,4 @@ $s=<<<'nowdoc'
 text";
 nowdoc;
 $s.="other {$v} 'teste' \"teste\" $a[key] ${v }".(String)Classe::c.'single quotes';$exp=(bool)((true==true)&&(true===true)||(true!=false)and (true!==false)or truexor (!false));try{throw new \Exception();}catch(\Exception$e){if(!($e instanceof \Exception)):print "";elseif(false):echo "";?><?="";?><?php
- else :endif;}switch ($v):case 0:break;default:break;endswitch;function (){};unset($v);(unset)$s;
+ else :endif;}switch ($v):case 0:break;default:break;endswitch;function (){};unset($v);(unset)$s;__halt_compiler();
