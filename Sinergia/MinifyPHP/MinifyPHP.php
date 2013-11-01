@@ -21,7 +21,7 @@ class MinifyPHP
 
     /**
      * Gera todos os tokens, faz o processamento necessário e retorna string com código minimizado.
-     * @param string $code
+     * @param  string $code
      * @return string
      */
     public function minify($code)
@@ -38,7 +38,7 @@ class MinifyPHP
             }
         }
 
-        return $minified;
+        return $minified . PHP_EOL;
     }
 
     /**
@@ -138,6 +138,7 @@ class MinifyPHP
         if ($this->previousStr == ' .') {
             return $this->separator . $str;
         }
+
         return $str;
     }
 
@@ -150,6 +151,7 @@ class MinifyPHP
     {
         $str = $this->operadores($str);
         $this->previousTokenType = null;
+
         return $str;
     }
 
